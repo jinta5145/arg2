@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #c9bcae;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: gray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .button-box {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-image: url("blue.jpg"); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    z-index: 0;
+  }
+  
+  .button-box button {
+    position: relative;
+    z-index: 1;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .button-box button:hover {
+    background-color: #5a6268;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .project-box {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-box .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: 0;
+  }
+  
+  .project-box a {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .project-overlay {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .project-overlay:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  
