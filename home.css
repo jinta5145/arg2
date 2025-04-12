@@ -7,15 +7,21 @@
     background: linear-gradient(to bottom, #f5e8e0, #fceee8);
     color: #333;
 }
-
+.subtitle {
+    font-size: 14px;
+    color: gray;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: #c9bcae;
     color: #fff;
+}
+.menu-icon {
+    display: none;
 }
 .job-title {
     font-size: 12px;
@@ -72,26 +78,72 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .header-box-for-menu {
-         display: none;
+    .hero h2 {
+      font-size: 50px;
     }
- 
-    .header-box-for-menu {
-         display: block;
+  
+    .hero p {
+      font-size: 24px;
     }
- 
-    .section-one {
-     grid-template-columns: 1fr;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 20px;
     }
- }
- 
- @media (max-width: 500px) {
-    nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: black;
-        font-size: 14px;
-        transition: 0.3s;
-        font-weight: bold;
+  
+    nav {
+      display: none; 
     }
+  
+    .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      color: black;
     }
+  
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  
+    .job-title {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .job-title {
+      font-size: 13px;
+    }
+  
+    .profile-img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
